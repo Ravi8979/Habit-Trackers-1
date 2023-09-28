@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/signin.css">
+    <title>
+        <%= title %>
+    </title>
+</head>
+<body>
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form action="/user/create-session" method="POST">
+        <h5 id="welcome">Welcome on Habbit Tracker app</h5>
+        <h3>Login Here</h3>
+
+        <label for="mail">Username</label>
+        <input type="email" name="email" placeholder="yourmail@gmail.com" id="mail" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+
+        <input type="submit" value="Sign In">
+       <h5 id="signuplink">not yet register ? <a href="/user/sign-up" id="s-up-link">Sign Up</a></h5>
+    </form>
+</body>
+</html>
